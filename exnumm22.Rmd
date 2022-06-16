@@ -1,0 +1,70 @@
+---
+# title: "이력서"
+# author: "임재영"
+# date: '2022-06-16'
+output:
+  html_document: 
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+
+```
+
+<!-- knitr::opts_chunk\$set(echo = TRUE) -->
+
+# RESUME
+
+## Profile
+
+![](images/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84_%EC%9E%84%EC%9E%AC%EC%98%81-01.jpg)\
+이름 : 임재영\
+생년월일 : 1999.07.07 / 나이 : 만 23세\
+주소 : 수원시 권선구 덕영대로 1190번길 100, 수원아이파크시티 7단지 715동 802호  
+병역 : 육군 병장 만기전역(20.9)
+
+Phone. 010-3154-8300\
+E-mail. [dlawodud489\@naver.com](mailto:dlawodud489@naver.com){.email}
+
+
+
+## Education
+
+|       기간       |     학교     |           전공            |  학점   |
+|:----------------:|:------------:|:-------------------------:|:-------:|
+| 2015.3 \~ 2018.2 | 효원고등학교 |           이과            |   \-    |
+|     2018.3\~     |  한양대학교  | 원자력공학과/창업융합학과 | 4.1/4.5 |
+
+```{r , echo=FALSE}
+grade <- c(3.31, 3.74, 4.5, 4.5)
+
+plot(grade, main = "학점추이", type= "o", col="red", axes = F, ann=F)
+axis(1, at = 1:4, labels = c("2018-1", "2018-2", "2021-1", "2021-2"))
+axis(2, ylim = c(2.0, 4.5))
+title(xlab= "학기", col.lab="black")
+title(ylab = "학점", col.lab = "black")
+```
+
+## License
+
+|                            |          |                      |
+|:--------------------------:|:--------:|:--------------------:|
+|          자격증명          |  취급일  |       발급기관       |
+| 방사성동위원소취급일반면허 | 22.06.01 | 한국원자력안전기술원 |
+
+## Awards
+
+::: {style="background-color:#F7F7F7;padding: 5px"}
+
+2021 원자력-방사선 아이디어 경진대회 한국원자력연구원 원장상
+
+방사선 안전문화 확산 아이디어 공모전 최우수상
+
+한양대 학업 최우수상 2회
+
+한양 스타트업 아카데미 18기 우수상
+
+:::
